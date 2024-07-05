@@ -1,8 +1,9 @@
 import AWS from 'aws-sdk';
-import dotenv from 'dotenv';
 
-// Load environment variables from .env file if it exists
-dotenv.config();
+// Conditionally load dotenv only in non-production environments
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 AWS.config.update({
   accessKeyId: process.env.APP_ACCESS_ID,
