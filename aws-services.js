@@ -1,4 +1,8 @@
 import AWS from 'aws-sdk';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file if it exists
+dotenv.config();
 
 AWS.config.update({
   accessKeyId: process.env.APP_ACCESS_ID,
@@ -7,4 +11,4 @@ AWS.config.update({
 });
 
 const textract = new AWS.Textract();
-export default textract
+export default textract;
