@@ -6,11 +6,11 @@ export default function Footer() {
 			Created by {' '}
 			<Link
 				className={'text-primary-main'}
-				href={"https://www.mejaz.in"}
+				href={"https://vivala.travel/"}
 				target={'_blank'}
 				rel={'noopener noreferrer'}
 			>
-				Mohd Ejaz Siddiqui
+				Vivala Team
 			</Link>
 		</div>
 	)
