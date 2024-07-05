@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 AWS.config.update({
-  accessKeyId: process.env.APP_ACCESS_ID,
+  accessKeyId: process.env.APP_ACCESS_KEY_ID,
   secretAccessKey: process.env.APP_ACCESS_KEY,
   region: process.env.APP_REGION,
 });
